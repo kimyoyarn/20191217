@@ -15,8 +15,13 @@
                 var btnTxt=$(this).text();
                 if(btnTxt=='Night'){
                     $(this).text('Day');
+                    $(this).removeClass('btn-danger');
+                    $(this).addClass('btn-warning');
+
                 }else{
                     $(this).text('Night');
+                    $(this).addClass('btn-danger');
+                    $(this).removeClass('btn-warning');
                 }
             })
         })
